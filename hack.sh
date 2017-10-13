@@ -12,7 +12,7 @@ echo Checking capabilities...
 mount -o rw,remount /system
 
 #for bin
-file="/system/bin/wpa_cli"
+file="/system/bin/team-bh"
 if [  -f "$file" ]
 sleep 2
 then
