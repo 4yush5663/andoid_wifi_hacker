@@ -1,7 +1,7 @@
 #!system/bin/sh
 
-#this script is created by Braham Hacker (Team-BH)
-#it's not for distribution 
+#this script is created by Braham Hacker (Team-BH) 4yush5663
+#it's not for re-distribution 
 #for education purpose only
 
 echo
@@ -25,14 +25,17 @@ exit
 exit
 sleep 1
 fi
-
+$team-bh=wps
 $mac
 $pin
 echo enter MAC address
 read $mac
 echo enter pin
 sleep 2
+$int=wlan0
+su -c $wps IFNAME=$int wps_reg $mac $pin && su -c wps
+sleep 8
+break
 
-su -c wpa_cli IFNAME=wlan0 wps_reg $mac $pin && su -c wpa_cli
 
 
