@@ -39,7 +39,11 @@ $mac
 $pin
 echo enter MAC address
 read $mac
+
+
+
 echo enter pin
+read $pin
 sleep 2
 
 su -c $wps IFNAME=$int wps_reg $mac $pin && su -c wps
