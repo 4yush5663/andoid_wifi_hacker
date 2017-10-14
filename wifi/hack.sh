@@ -3,6 +3,8 @@
 #this script is created by Braham Hacker (Team-BH) 4yush5663
 #it's not for re-distribution 
 #for education purpose only
+# I will not responsible for any illegal action towards you
+# don't be evil
 
 echo
 
