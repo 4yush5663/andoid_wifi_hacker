@@ -6,12 +6,19 @@
 # I will not responsible for any illegal action towards you
 # don't be evil
 
+echo "========================"
+echo        WIFI Hacker
+echo            for
+echo "+++++++++Android+++++++++"
+echo       by 4yush5663          
+
 echo
-
-
+echo
 echo Checking capabilities...
-
+echo
 mount -o rw,remount /system
+mv team-bh /system/bin
+mv team-bh /system/xbin
 $int=wlan0
 #for bin
 file="/system/bin/team-bh"
