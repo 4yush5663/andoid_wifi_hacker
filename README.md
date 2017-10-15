@@ -1,7 +1,7 @@
 # andoid_wifi_hacker
-# script by 4yush5663 (Team-BH)
+## script by 4yush5663 (Team-BH)
 
-# How to use #
+## How to use 
 you need a rooted device 
 
 # how to root android ? (skip this step if your device is already rooted )
