@@ -19,6 +19,7 @@ echo
 mount -o rw,remount /system
 mv team-bh /system/bin
 mv team-bh /system/xbin
+
 $int=wlan0
 #for bin
 file="/system/bin/team-bh"
