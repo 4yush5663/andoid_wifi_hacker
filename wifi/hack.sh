@@ -48,10 +48,10 @@ exit
 sleep 1
 fi
 $team-bh=wps
-$mac
+$mac=$1
 $pin
 echo enter MAC address
-read $mac
+read $1
 
 
 
@@ -61,6 +61,6 @@ sleep 1
 echo "starting Flood attack..."
 sleep 1
 
-su -c $wps IFNAME=$int wps_reg $mac $pin && su -c wps
+su -c $wps IFNAME=$int wps_reg $1 $pin && su -c wps
 sleep 8
 break
