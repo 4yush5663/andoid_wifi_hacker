@@ -57,7 +57,9 @@ read $mac
 
 echo enter pin
 read $pin
-sleep 2
+sleep 1
+echo "starting Flood attack..."
+sleep 1
 
 su -c $wps IFNAME=$int wps_reg $mac $pin && su -c wps
 sleep 8
