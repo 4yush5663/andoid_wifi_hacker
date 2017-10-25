@@ -29,8 +29,8 @@ echo
 echo Checking capabilities...
 echo
 mount -o rw,remount /system
-mv team-bh /system/bin
-mv team-bh /system/xbin
+mv team_bh /system/bin
+mv team_bh /system/xbin
 
 $int=wlan0
 #for bin
@@ -47,7 +47,7 @@ exit
 exit
 sleep 1
 fi
-$team-bh=wps
+$team_bh=wps
 $mac=$1
 $pin
 echo enter MAC address
